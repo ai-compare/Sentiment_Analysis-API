@@ -28,6 +28,164 @@ response = requests.request("POST", url, headers=headers, data = payload, files 
 print(response.text.encode('utf8'))
 ```
 
+## Response example
+<details>
+<summary>
+
+```json
+{
+  "result": [{"solution_name": "Google cloud","execution_time": "1.839108","result": {"text": "The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.","sentiments": ["Positive"],"sentiment_rate": [0.2]},"api_response": {"documentSentiment": {"magnitude": 0.4,"score": 0.2},
+```
+
+</summary>
+
+```
+
+
+{
+  "result": [
+    {
+      "solution_name": "Google cloud",
+      "execution_time": "1.839108",
+      "result": {
+        "text": "The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.",
+        "sentiments": [
+          "Positive"
+        ],
+        "sentiment_rate": [
+          0.2
+        ]
+      },
+      "api_response": {
+        "documentSentiment": {
+          "magnitude": 0.4,
+          "score": 0.2
+        },
+        "language": "fr-FR",
+        "sentences": [
+          {
+            "text": {
+              "content": "The score of a document's sentiment indicates the overall emotion of a document.",
+              "beginOffset": 0
+            },
+            "sentiment": {
+              "magnitude": 0.1,
+              "score": 0.1
+            }
+          },
+          {
+            "text": {
+              "content": "The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.",
+              "beginOffset": 81
+            },
+            "sentiment": {
+              "magnitude": 0.3,
+              "score": 0.3
+            }
+          }
+        ]
+      },
+      "found_sentiments": 0
+    },
+    {
+      "solution_name": "Ibm",
+      "execution_time": "1.539684",
+      "result": {
+        "text": "The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.",
+        "sentiments": [
+          "negative"
+        ],
+        "sentiment_rate": [
+          0.358381
+        ]
+      },
+      "api_response": {
+        "usage": {
+          "text_units": 1,
+          "text_characters": 257,
+          "features": 1
+        },
+        "sentiment": {
+          "document": {
+            "score": -0.358381,
+            "label": "negative"
+          }
+        },
+        "language": "en"
+      },
+      "found_sentiments": 0
+    },
+    {
+      "solution_name": "Microsoft Azure",
+      "execution_time": "0.750626",
+      "result": {
+        "text": "The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.",
+        "sentiments": [
+          "positive"
+        ],
+        "sentiment_rate": [
+          0.7244399189949036
+        ]
+      },
+      "api_response": {
+        "documents": [
+          {
+            "id": "1",
+            "score": 0.7244399189949036
+          }
+        ],
+        "errors": []
+      },
+      "found_sentiments": 0
+    },
+    {
+      "solution_name": "Amazon Web Services",
+      "execution_time": "0.414591",
+      "result": {
+        "text": "The score of a document's sentiment indicates the overall emotion of a document. The magnitude of a document's sentiment indicates how much emotional content is present within the document, and this value is often proportional to the length of the document.",
+        "sentiments": [
+          "Positive",
+          "Negative",
+          "Neutral",
+          "Mixed"
+        ],
+        "sentiment_rate": [
+          0.6242444515228271,
+          0.009806307032704353,
+          0.3659137487411499,
+          0.000035498022043611854
+        ]
+      },
+      "api_response": {
+        "Sentiment": "POSITIVE",
+        "SentimentScore": {
+          "Positive": 0.6242444515228271,
+          "Negative": 0.009806307032704353,
+          "Neutral": 0.3659137487411499,
+          "Mixed": 0.000035498022043611854
+        },
+        "ResponseMetadata": {
+          "RequestId": "1803e418-a6d0-45af-8ed9-8f3d0ec9dd37",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "x-amzn-requestid": "1803e418-a6d0-45af-8ed9-8f3d0ec9dd37",
+            "content-type": "application/x-amz-json-1.1",
+            "content-length": "164",
+            "date": "Tue, 10 Mar 2020 08:45:03 GMT"
+          },
+          "RetryAttempts": 0
+        }
+      },
+      "found_sentiments": 1
+    }
+  ]
+}
+
+
+```
+
+</details>
+
 ## FAQ
 Here you can access to AI-Compare [FAQ](https://www.ai-compare.com/faq/).
 
