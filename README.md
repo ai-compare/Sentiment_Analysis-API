@@ -1,4 +1,4 @@
-# Sentiment_Analysis-API
+# Sentiment Analysis - AI-Compare API
 ## Description
 This repositery provides code to implement [AI-Compare Sentiment Analysis API](https://www.ai-compare.com/text_apis/sentiment_analysis/). [AI-Compare Sentiment Analysis API](https://www.ai-compare.com/text_apis/sentiment_analysis/) allows to call Sentiment Analysis APIs from Google Cloud Platform Natural Language, AWS Comprehend, Microsoft Azure Cognitives Service Language, and IBM Watson Natural Language Understanding. It permits to get results from these providers and compare the results.
 
